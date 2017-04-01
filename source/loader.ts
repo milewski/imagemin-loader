@@ -60,4 +60,4 @@ export default function (content) {
         .then(buffer => callback(null, buffer))
         .catch(err => callback(err));
 
-};
+}
