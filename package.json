@@ -1,12 +1,13 @@
 {
   "name": "imagemin-loader",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Imagemin loader module for webpack",
   "author": "Rafael @Milewski",
   "license": "MIT",
   "main": "source/loader.js",
   "files": [
-    "source"
+    "source",
+    "schema"
   ],
   "homepage": "https://github.com/Milewski/imagemin-loader",
   "keywords": [
