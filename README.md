@@ -37,9 +37,9 @@ module: {
                         // enabled: process.env.NODE_ENV === 'production',
                         plugins: [
                             {
-                                use: 'imagemin-guetzli',
+                                use: 'imagemin-pngquant',
                                 options: {
-                                    quality: 95
+                                    quality: '50-60'
                                 }
                             },
                             {
@@ -47,7 +47,7 @@ module: {
                                 use: require('imagemin-guetzli'),
                                 options: {
                                     enabled: process.env.NODE_ENV === 'production',
-                                    quality: 50
+                                    quality: 95
                                 }
                             }
                         ]
