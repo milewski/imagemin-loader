@@ -1,5 +1,7 @@
 # imagemin-loader
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/Milewski/imagemin-loader.svg)](https://greenkeeper.io/)
+
 [![Build Status](https://travis-ci.org/Milewski/imagemin-loader.svg?branch=master)](https://travis-ci.org/Milewski/imagemin-loader)
 [![npm version](https://badge.fury.io/js/imagemin-loader.svg)](https://badge.fury.io/js/imagemin-loader)
 [![npm downloads](https://img.shields.io/npm/dm/imagemin-loader.svg)](https://www.npmjs.com/package/imagemin-loader)
