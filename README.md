@@ -4,6 +4,7 @@
 [![npm version](https://badge.fury.io/js/imagemin-loader.svg)](https://badge.fury.io/js/imagemin-loader)
 [![npm downloads](https://img.shields.io/npm/dm/imagemin-loader.svg)](https://www.npmjs.com/package/imagemin-loader)
 [![dependencies](https://david-dm.org/Milewski/imagemin-loader.svg)](https://www.npmjs.com/package/imagemin-loader)
+[![greenkeeper](https://badges.greenkeeper.io/Milewski/imagemin-loader.svg)](https://greenkeeper.io)
 
 Imagemin hook for webpack 2
 
@@ -59,7 +60,7 @@ module: {
     ]
 }
 ```
-You can use any [imagemin plugin](https://www.npmjs.com/browse/keyword/imageminplugin), simple include it on the plugin array and you will be good to go.
+You can use any [imagemin plugin](https://www.npmjs.com/browse/keyword/imageminplugin), simple include it on the plugin array and install it as a local dependency.
 
 ### Options
 
