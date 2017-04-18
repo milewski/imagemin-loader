@@ -2,14 +2,18 @@
   "name": "imagemin-loader",
   "version": "1.0.4",
   "description": "Imagemin loader module for webpack",
-  "author": "Rafael @Milewski",
+  "author": {
+    "name": "Rafael Milewski",
+    "email": "rafael.milewski@gmail.com",
+    "url": "https://github.com/milewski"
+  },
   "license": "MIT",
   "main": "source/loader.js",
   "files": [
     "source/*.js",
     "schema/*.json"
   ],
-  "homepage": "https://github.com/Milewski/imagemin-loader",
+  "homepage": "https://github.com/milewski/imagemin-loader",
   "keywords": [
     "webpack",
     "imagemin",
@@ -22,10 +26,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/Milewski/imagemin-loader"
+    "url": "https://github.com/milewski/imagemin-loader"
   },
   "bugs": {
-    "url": "https://github.com/Milewski/imagemin-loader/issues"
+    "url": "https://github.com/milewski/imagemin-loader/issues"
   },
   "scripts": {
     "test": "mocha -u tdd --no-timeouts",

@@ -1,10 +1,10 @@
 # imagemin-loader
 
-[![Build Status](https://travis-ci.org/Milewski/imagemin-loader.svg?branch=master)](https://travis-ci.org/Milewski/imagemin-loader)
+[![Build Status](https://travis-ci.org/milewski/imagemin-loader.svg?branch=master)](https://travis-ci.org/milewski/imagemin-loader)
 [![npm version](https://badge.fury.io/js/imagemin-loader.svg)](https://badge.fury.io/js/imagemin-loader)
 [![npm downloads](https://img.shields.io/npm/dm/imagemin-loader.svg)](https://www.npmjs.com/package/imagemin-loader)
-[![dependencies](https://david-dm.org/Milewski/imagemin-loader.svg)](https://www.npmjs.com/package/imagemin-loader)
-[![greenkeeper](https://badges.greenkeeper.io/Milewski/imagemin-loader.svg)](https://greenkeeper.io)
+[![dependencies](https://david-dm.org/milewski/imagemin-loader.svg)](https://www.npmjs.com/package/imagemin-loader)
+[![greenkeeper](https://badges.greenkeeper.io/milewski/imagemin-loader.svg)](https://greenkeeper.io)
 
 Imagemin hook for webpack 2
 
