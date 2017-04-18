@@ -1,6 +1,6 @@
 {
   "name": "imagemin-loader",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Imagemin loader module for webpack",
   "author": {
     "name": "Rafael Milewski",
@@ -37,7 +37,7 @@
     "prepublish": "npm run build && npm test"
   },
   "dependencies": {
-    "ajv": "^4.11.6",
+    "ajv": "^5.0.0",
     "imagemin": "^5.2.2",
     "loader-utils": "^1.1.0"
   },
