@@ -78,6 +78,6 @@ You can use any [imagemin plugin](https://www.npmjs.com/browse/keyword/imageminp
     ]
 }
 ```
-## License
+## License 
 
-[MIT](LICENSE)
+[MIT](LICENSE) © [Rafael Milewski](https://github.com/milewski)
