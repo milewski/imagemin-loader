@@ -6,7 +6,7 @@
 [![dependencies](https://david-dm.org/milewski/imagemin-loader.svg)](https://www.npmjs.com/package/imagemin-loader)
 [![greenkeeper](https://badges.greenkeeper.io/milewski/imagemin-loader.svg)](https://greenkeeper.io)
 
-Imagemin hook for webpack 2
+Imagemin hook for webpack 3
 
 > Minify all images seamlessly with [imagemin](https://github.com/kevva/imagemin)
 
