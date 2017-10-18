@@ -43,7 +43,7 @@
   },
   "devDependencies": {
     "@types/mocha": "^2.2.43",
-    "@types/node": "8.0.42",
+    "@types/node": "8.0.45",
     "expect.js": "^0.3.1",
     "imagemin-mozjpeg": "^6.0.0",
     "imagemin-pngquant": "^5.0.1",
