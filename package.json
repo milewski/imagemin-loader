@@ -45,7 +45,7 @@
     "@types/mocha": "^2.2.43",
     "@types/node": "8.0.55",
     "expect.js": "^0.3.1",
-    "imagemin-mozjpeg": "^6.0.0",
+    "imagemin-mozjpeg": "^7.0.0",
     "imagemin-pngquant": "^5.0.1",
     "mocha": "^4.0.0",
     "typescript": "^2.5.2"
