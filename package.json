@@ -1,6 +1,6 @@
 {
   "name": "imagemin-loader",
-  "version": "1.0.7",
+  "version": "0.0.0-development",
   "description": "Imagemin loader module for webpack",
   "author": {
     "name": "Rafael Milewski",
@@ -32,22 +32,39 @@
     "url": "https://github.com/milewski/imagemin-loader/issues"
   },
   "scripts": {
+    "commit": "git-cz",
     "test": "mocha -u tdd --no-timeouts",
     "build": "tsc",
-    "prepublish": "npm run build && npm test"
+    "prepublish": "yarn run build && npm test",
+    "prettier": "prettier \"*/**/*.ts\" --config .prettierrc --ignore-path ./.prettierignore --write && git add . && git status",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+  },
+  "pre-commit": [
+    "prettier"
+  ],
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
   },
   "dependencies": {
-    "ajv": "^5.2.2",
+    "ajv": "^5.5.2",
+    "global": "^4.3.2",
     "imagemin": "^5.3.1",
     "loader-utils": "^1.1.0"
   },
   "devDependencies": {
-    "@types/mocha": "^2.2.43",
-    "@types/node": "^8.0.28",
+    "@types/mocha": "^2.2.45",
+    "@types/node": "^8.5.2",
+    "commitizen": "^2.9.6",
+    "cz-conventional-changelog": "^2.1.0",
     "expect.js": "^0.3.1",
-    "imagemin-mozjpeg": "^6.0.0",
+    "imagemin-mozjpeg": "^7.0.0",
     "imagemin-pngquant": "^5.0.1",
-    "mocha": "^3.5.2",
-    "typescript": "^2.5.2"
+    "mocha": "^4.1.0",
+    "pre-commit": "^1.2.2",
+    "prettier": "^1.9.2",
+    "semantic-release": "^11.0.2",
+    "typescript": "^2.6.2"
   }
 }

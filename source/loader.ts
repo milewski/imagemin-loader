@@ -1,14 +1,13 @@
-import { getOptions } from "loader-utils";
-import * as imagemin from "imagemin";
-import * as Validator from "ajv";
+import { getOptions } from 'loader-utils'
+import * as imagemin from 'imagemin'
+import * as Validator from 'ajv'
 
-const schema = require('../schema/options.json');
-const validator = new Validator({ allErrors: true });
+const schema = require('../schema/options.json')
+const validator = new Validator({ allErrors: true })
 
-export const raw = true;
-export default function (content) {
-
-    let { enabled = true, plugins = [] } = getOptions(this) || {};
+export const raw = true
+export default function(content) {
+    let { enabled = true, plugins = [] } = getOptions(this) || {}
 
     /**
      * Validate options
@@ -24,40 +23,36 @@ export default function (content) {
         return content
     }
 
-    plugins = plugins.map(({ use, options }) => {
-
-        /**
-         * If it's not enabled
-         */
-        if (options && options.enabled === false) {
-            return false;
-        }
-
-        if (options)
-            delete options.enabled;
-
-        if (typeof use === 'string') {
-
+    plugins = plugins
+        .map(({ use, options }) => {
             /**
-             * Check if Plugin has been installed otherwise abort
+             * If it's not enabled
              */
-            try {
-                return require(use)(options)
-            } catch (e) {
-                throw `You probably forgot to run "npm install ${use} --save"`
+            if (options && options.enabled === false) {
+                return false
             }
 
-        }
+            if (options) delete options.enabled
 
-        return use(options)
+            if (typeof use === 'string') {
+                /**
+                 * Check if Plugin has been installed otherwise abort
+                 */
+                try {
+                    return require(use)(options)
+                } catch (e) {
+                    throw `You probably forgot to run "npm install ${use} --save-dev"`
+                }
+            }
 
-    }).filter(Boolean)
+            return use(options)
+        })
+        .filter(Boolean)
 
-    const callback = this.async();
+    const callback = this.async()
 
     imagemin
         .buffer(content, { plugins })
         .then(buffer => callback(null, buffer))
-        .catch(err => callback(err));
-
+        .catch(err => callback(err))
 }
