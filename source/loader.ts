@@ -1,6 +1,6 @@
-import { getOptions } from 'loader-utils'
-import * as imagemin from 'imagemin'
 import * as Validator from 'ajv'
+import * as imagemin from 'imagemin'
+import { getOptions } from 'loader-utils'
 
 const schema = require('../schema/options.json')
 const validator = new Validator({ allErrors: true })

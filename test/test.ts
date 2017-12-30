@@ -25,7 +25,7 @@ describe('Loader', () => {
         expect(loader(sampleJPG)).to.eql(sampleJPG)
     })
 
-    it('should accept any imagemin plugin', done => {
+    it('should accept any imagemin plugin (Require Form)', done => {
         let context = {
             loader,
             query: {
@@ -51,6 +51,21 @@ describe('Loader', () => {
         }
 
         context.loader(sampleJPG)
+    })
+
+    it('should accept any imagemin plugin (String Form)', () => {
+        let context = {
+            loader,
+            query: {
+                plugins: [{ use: 'im-a-invalid-plugin' }]
+            }
+        }
+
+        expect(() => {
+            context.loader(sampleJPG)
+        }).to.throwException(
+            /You probably forgot to run "npm install im-a-invalid-plugin --save-dev"/
+        )
     })
 
     it('should also accept a string instead of function for plugins', done => {
@@ -79,19 +94,6 @@ describe('Loader', () => {
         }
 
         context.loader(samplePNG)
-    })
-
-    it('should accept any imagemin plugin', () => {
-        let context = {
-            loader,
-            query: {
-                plugins: [{ use: 'im-a-invalid-plugin' }]
-            }
-        }
-
-        expect(() => {
-            context.loader(sampleJPG)
-        }).to.throwException(/npm install im-a-invalid-plugin --save/)
     })
 
     it('should not accept invalid options', () => {

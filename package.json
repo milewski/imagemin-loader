@@ -33,6 +33,7 @@
   },
   "scripts": {
     "commit": "git-cz",
+    "pretest": "yarn run build",
     "test": "mocha -u tdd --no-timeouts",
     "build": "tsc",
     "prepublish": "yarn run build && npm test",
@@ -40,7 +41,8 @@
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "pre-commit": [
-    "prettier"
+    "prettier",
+    "test"
   ],
   "config": {
     "commitizen": {
