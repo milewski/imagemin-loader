@@ -37,7 +37,7 @@
     "test": "mocha -u tdd --no-timeouts",
     "build": "tsc",
     "prepublish": "npm run build && npm test",
-    "prettier": "prettier \"*/**/*.ts\" --config .prettierrc --write",
+    "prettier": "prettier \"*/**/*.ts\" --config .prettierrc --write && git add .",
     "semantic-release": "semantic-release"
   },
   "pre-commit": [
@@ -48,6 +48,9 @@
     "commitizen": {
       "path": "cz-conventional-changelog"
     }
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
   },
   "dependencies": {
     "ajv": "^5.5.2",
