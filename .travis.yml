@@ -1,17 +1,25 @@
 language: node_js
+
 cache:
-  yarn: true
   directories:
     - node_modules
+
 notifications:
   email: false
+
 node_js:
   - 'node'
   - '7'
   - '6'
   - '4'
+
+before_install:
+  - sudo apt-get -qq update
+  - sudo apt-get install nasm -y
+
 after_success:
-  - yarn run semantic-release
+  - npm run semantic-release
+
 branches:
   except:
     - /^v\d+\.\d+\.\d+$/

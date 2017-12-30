@@ -33,10 +33,10 @@
   },
   "scripts": {
     "commit": "git-cz",
-    "pretest": "yarn run build",
+    "pretest": "npm run build",
     "test": "mocha -u tdd --no-timeouts",
     "build": "tsc",
-    "prepublish": "yarn run build && npm test",
+    "prepublish": "npm run build && npm test",
     "prettier": "prettier \"*/**/*.ts\" --config .prettierrc --ignore-path ./.prettierignore --write && git add . && git status",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
