@@ -68,7 +68,7 @@
     "imagemin-pngquant": "^6.0.0",
     "mocha": "^5.0.5",
     "pre-commit": "^1.2.2",
-    "prettier": "^1.11.1",
+    "prettier": "^1.14.3",
     "semantic-release": "^15.1.4",
     "typescript": "^2.7.2"
   }
