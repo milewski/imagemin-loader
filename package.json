@@ -55,7 +55,7 @@
   "dependencies": {
     "ajv": "^6.4.0",
     "global": "^4.3.2",
-    "imagemin": "^6.0.0",
+    "imagemin": "^6.1.0",
     "loader-utils": "^1.1.0"
   },
   "devDependencies": {
